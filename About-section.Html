@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: sans-serif;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-image: linear-gradient(black,rgb(66, 47, 47),black);
+    z-index: 2;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:80px;
+}
+header nav.logo{
+    width:150px;
+
+}
+nav.menu{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav .menu a{
+      color:#fff;
+      margin-left: 30px;
+      position: relative;
+}
+
+nav .menu a::after{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0;
+    height:2px;
+    background-color:red;
+    transition:0.4s;
+}
+nav .menu a:hover::after{
+    width:100%;
+    
+}
+nav .social a i{
+    color:white;
+    margin-left:10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    color:rgb(224, 16, 9);
+    transform:scale(1.3s);
+     
+}
+
+/* about css */
+
+.about-container{
+    background-color: #000000;
+}
+
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img{
+    flex: 1 1 21rem;
+    
+}
+.about-text{
+    flex: 1 1 21rem;
+    color: #e9e3e3;
+}
+.about-text h1 {
+    color: #ff0000;
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin:0.5rem 0 1.4rem;
+    color: #e9e3e3;
+    font-size: medium;
+    line-height: 23px;
+    font-weight: 400;
+}
+.lrnmor{
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    height:32px;
+    width: 92px;
+    border:0;
+    font-size:medium;
+}
+    </style>
+</head>
+<body>
+    <!-- headr section  -->
+    <header>
+        <nav>
+            <img src="cars/red-vehicle-car-logo-png.webp" class="logo" height="120" alt="">
+            <div class="menu">
+                <a href="index.html" >Home</a>
+                <a href="About-section.Html" >About</a>
+                <a href="contact.html">Contact</a>
+                <a href="car section.html" >Cars</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/j.s_rathore_x_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!--  header end -->
+    <!-- About section  -->
+    <section class="about-container" id="about">
+        <div class="about-img">
+            <img src="cars/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.webp"  alt="">
+        </div>
+        <div class="about-text">
+            <h1>About Us</h1>
+         <h2>your preimer Choice for Effortless Car Rentals</h2>
+         <p>
+            Experience the ultimate convenince with RentMyCar,
+            where renting a car is easy as a few clicks. <br>
+            Welcome to RentMyCar, your trusted partner for seamless and stylish car rentals. Whether you're hitting the road for a business trip, a weekend getaway, or just need a reliable ride around town, we've got you covered. Our diverse fleet of vehicles ensures that you'll find the perfect match for your journey, be it a sleek sedan, a spacious SUV, or a sporty convertible. At RentMyCar, we pride ourselves on providing top-notch customer service and unbeatable rates. With us, your ride is just a few clicks away—experience the freedom of the open road with RentMyCar today!
+         </p>
+        <button class="lrnmor">Read More</button>
+        </div>
+     </section>
+    <!-- About section  End-->
+</body>
+</html>
